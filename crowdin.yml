@@ -1,0 +1,3 @@
+files:
+  - source: /de_DE/messages.yml
+    translation: /%locale_with_underscore%/messages.yml
