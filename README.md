@@ -36,6 +36,8 @@ The goal is to make it easy to translate and expand the plugin into multiple lan
 
 Translations are managed via **Crowdin** to make collaboration easier and more organized.
 
+[![Crowdin](https://badges.crowdin.net/playershops/localized.svg)](https://crowdin.com/project/playershops)
+
 👉 You can contribute here: *https://crowdin.com/project/playershops*
 
 - Changes made on Crowdin may be synced back to this repository
