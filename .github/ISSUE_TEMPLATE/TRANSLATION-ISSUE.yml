@@ -1,0 +1,66 @@
+name: Wrong or missing translation
+description: Report a typo, a bad translation or a missing message
+title: "[Translation] "
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping to improve PlayerShops! Small fixes are also welcome as a pull request.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched the existing issues and this problem has not been reported yet.
+          required: true
+
+  - type: input
+    id: locale
+    attributes:
+      label: Language / locale
+      description: The folder name of the affected language.
+      placeholder: "de_DE"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: What is the problem?
+      options:
+        - Typo or grammar mistake
+        - Wrong or misleading translation
+        - Message is missing (shows the key or English text)
+        - Formatting problem (colors, hover or click events broken)
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: key
+    attributes:
+      label: Key
+      description: The key from `messages.yml`, if you know it.
+      placeholder: "mainCommand.version.outdated"
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text
+      description: What is currently shown in-game or written in the file?
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested text
+      description: How should it read instead? Please keep MiniMessage tags and placeholders unchanged.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Where is the message shown? Screenshots help a lot.

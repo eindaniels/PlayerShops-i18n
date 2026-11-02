@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Bug in the plugin itself
+    url: https://github.com/eindaniels/PlayerShops/issues/new/choose
+    about: This repository only contains translations. Please report plugin bugs and feature requests in the PlayerShops repository.

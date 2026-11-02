@@ -1,0 +1,43 @@
+name: New language request
+description: Ask for a language that is not available yet
+title: "[Language] "
+labels: ["new language"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Want PlayerShops in your language? Tell us which one, and whether you can help translating.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I checked the list of available languages in the README and the existing issues.
+          required: true
+
+  - type: input
+    id: language
+    attributes:
+      label: Language and locale
+      description: Name and locale code of the language you want.
+      placeholder: "French (fr_FR)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: help
+    attributes:
+      label: Can you help with the translation?
+      options:
+        - "Yes, I will translate it myself and open a pull request"
+        - "Yes, but I need some help getting started"
+        - "No, I only want to request it"
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Anything else we should know, e.g. regional differences or preferred terms.
